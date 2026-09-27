@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenLeaf - Plant Nursery</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <div class="navbar">
+
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-leaf"></i>
+                <span>Green<span>Leaf</span></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#services">Services</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-icons">
+
+                <button id="darkModeBtn" title="Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="cart-btn" id="openCart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartCount">0</span>
+                </button>
+
+                <button class="menu-btn" id="menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                <i class="fa-solid fa-seedling"></i>
+                Welcome to GreenLeaf
+            </p>
+
+            <h1>
+                Bring Nature<br>
+                <span>Into Your Home</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover beautiful indoor and outdoor plants,
+                premium pots and professional gardening services.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="btn">
+                    Explore Plants
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#services" class="btn btn-outline">
+                    Our Services
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=900&q=85"
+                 alt="Beautiful indoor plants">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <div>
+                <h3>Healthy Plants</h3>
+                <p>Carefully selected plants</p>
+            </div>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <div>
+                <h3>Fast Delivery</h3>
+                <p>Safe home delivery</p>
+            </div>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <div>
+                <h3>Expert Guidance</h3>
+                <p>Tips from plant experts</p>
+            </div>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <div>
+                <h3>Affordable Price</h3>
+                <p>Best quality at low price</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <p class="section-subtitle">
+                Our Collection
+            </p>
+
+            <h2>Beautiful Plants For You</h2>
+
+            <p>
+                Choose from our collection of healthy and beautiful plants.
+            </p>
+
+        </div>
+
+
+        <!-- Search and Filter -->
+
+        <div class="product-controls">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-search"></i>
+
+                <input type="text"
+                       id="searchInput"
+                       placeholder="Search plants...">
+
+            </div>
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-category="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-category="indoor">
+                    Indoor
+                </button>
+
+                <button class="filter-btn" data-category="outdoor">
+                    Outdoor
+                </button>
+
+                <button class="filter-btn" data-category="flowering">
+                    Flowering
+                </button>
+
+                <button class="filter-btn" data-category="succulent">
+                    Succulent
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product Cards -->
+
+        <div class="products-grid" id="productsGrid">
+
+            <!-- Product 1 -->
+            <div class="product-card"
+                 data-category="indoor"
+                 data-name="Snake Plant">
+
+                <div class="product-image">
+
+                    <span class="product-tag">Popular</span>
+
+                    <img src="https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?auto=format&fit=crop&w=600&q=80"
+                         alt="Snake Plant">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">Indoor Plant</p>
+
+                    <h3>Snake Plant</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(4.9)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹399</strong>
+
+                        <button class="add-cart"
+                                data-id="1"
+                                data-name="Snake Plant"
+                                data-price="399"
+                                data-image="https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?auto=format&fit=crop&w=600&q=80">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card"
+                 data-category="indoor"
+                 data-name="Money Plant">
+
+                <div class="product-image">
+
+                    <span class="product-tag">Best Seller</span>
+
+                    <img src="https://images.unsplash.com/photo-1614594575445-0f9c0e5b6c66?auto=format&fit=crop&w=600&q=80"
+                         alt="Money Plant">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">Indoor Plant</p>
+
+                    <h3>Money Plant</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(4.8)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹249</strong>
+
+                        <button class="add-cart"
+                                data-id="2"
+                                data-name="Money Plant"
+                                data-price="249"
+                                data-image="https://images.unsplash.com/photo-1614594575445-0f9c0e5b6c66?auto=format&fit=crop&w=600&q=80">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card"
+                 data-category="flowering"
+                 data-name="Peace Lily">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1593691509543-c55fb32e5cee?auto=format&fit=crop&w=600&q=80"
+                         alt="Peace Lily">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">Flowering Plant</p>
+
+                    <h3>Peace Lily</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(4.7)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹449</strong>
+
+                        <button class="add-cart"
+                                data-id="3"
+                                data-name="Peace Lily"
+                                data-price="449"
+                                data-image="https://images.unsplash.com/photo-1593691509543-c55fb32e5cee?auto=format&fit=crop&w=600&q=80">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card"
+                 data-category="succulent"
+                 data-name="Aloe Vera">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80"
+                         alt="Aloe Vera">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">Succulent</p>
+
+                    <h3>Aloe Vera</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(4.6)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹199</strong>
+
+                        <button class="add-cart"
+                                data-id="4"
+                                data-name="Aloe Vera"
+                                data-price="199"
+                                data-image="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product-card"
+                 data-category="succulent"
+                 data-name="Cactus">
+
+                <div class="product-image">
+
+                    <span class="product-tag">New</span>
+
+                    <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=600&q=80"
+                         alt="Cactus">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">Succulent</p>
+
+                    <h3>Cactus</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(4.5)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹149</strong>
+
+                        <button class="add-cart"
+                                data-id="5"
+                                data-name="Cactus"
+                                data-price="149"
+                                data-image="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=600&q=80">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product-card"
+                 data-category="outdoor"
+                 data-name="Areca Palm">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=600&q=80"
+                         alt="Areca Palm">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">Outdoor Plant</p>
+
+                    <h3>Areca Palm</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(4.8)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹599</strong>
+
+                        <button class="add-cart"
+                                data-id="6"
+                                data-name="Areca Palm"
+                                data-price="599"
+                                data-image="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=600&q=80">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 7 -->
+            <div class="product-card"
+                 data-category="flowering"
+                 data-name="Rose Plant">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=600&q=80"
+                         alt="Rose Plant">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">Flowering Plant</p>
+
+                    <h3>Rose Plant</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(4.9)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹299</strong>
+
+                        <button class="add-cart"
+                                data-id="7"
+                                data-name="Rose Plant"
+                                data-price="299"
+                                data-image="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=600&q=80">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 8 -->
+            <div class="product-card"
+                 data-category="indoor"
+                 data-name="Areca Indoor Plant">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85?auto=format&fit=crop&w=600&q=80"
+                         alt="Indoor Plant">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">Indoor Plant</p>
+
+                    <h3>Areca Indoor</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(4.7)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹499</strong>
+
+                        <button class="add-cart"
+                                data-id="8"
+                                data-name="Areca Indoor"
+                                data-price="499"
+                                data-image="https://images.unsplash.com/photo-1598880940080-ff9a29891b85?auto=format&fit=crop&w=600&q=80">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p id="noProducts" class="no-products">
+            No plants found.
+        </p>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="services-section" id="services">
+
+        <div class="section-heading">
+
+            <p class="section-subtitle">
+                What We Offer
+            </p>
+
+            <h2>Our Gardening Services</h2>
+
+            <p>
+                We provide everything you need to create and maintain
+                a beautiful green space.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+
+                <h3>Plant Consultation</h3>
+
+                <p>
+                    Get expert advice to choose the right plants
+                    for your home and lifestyle.
+                </p>
+
+                <button class="service-btn"
+                        data-service="Plant Consultation">
+                    Book Service
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+
+                <h3>Potting Service</h3>
+
+                <p>
+                    Professional repotting and soil preparation
+                    for healthy plant growth.
+                </p>
+
+                <button class="service-btn"
+                        data-service="Potting Service">
+                    Book Service
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-scissors"></i>
+                </div>
+
+                <h3>Garden Maintenance</h3>
+
+                <p>
+                    Regular pruning, watering and maintenance
+                    to keep your garden beautiful.
+                </p>
+
+                <button class="service-btn"
+                        data-service="Garden Maintenance">
+                    Book Service
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+
+                <h3>Home Delivery</h3>
+
+                <p>
+                    Get your favorite plants safely delivered
+                    directly to your doorstep.
+                </p>
+
+                <button class="service-btn"
+                        data-service="Home Delivery">
+                    Book Service
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section class="reviews-section" id="reviews">
+
+        <div class="section-heading">
+
+            <p class="section-subtitle">
+                Customer Feedback
+            </p>
+
+            <h2>What Our Customers Say</h2>
+
+        </div>
+
+
+        <div class="review-container">
+
+            <button class="review-arrow" id="previousReview">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="review-card">
+
+                <div class="quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p id="reviewText">
+                    The plants were fresh and beautifully packed.
+                    I really loved the quality and delivery service.
+                </p>
+
+                <div class="review-user">
+
+                    <div class="user-avatar" id="userAvatar">
+                        P
+                    </div>
+
+                    <div>
+                        <h3 id="reviewName">Priya Sharma</h3>
+                        <span id="reviewLocation">Hyderabad</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="review-arrow" id="nextReview">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+        <div class="review-dots" id="reviewDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-image">
+
+            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=85"
+                 alt="GreenLeaf nursery">
+
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-subtitle">
+                About GreenLeaf
+            </p>
+
+            <h2>
+                Growing Green,
+                <span>Growing Happiness</span>
+            </h2>
+
+            <p>
+                GreenLeaf Plant Nursery was created with a simple goal:
+                to make beautiful and healthy plants accessible to everyone.
+            </p>
+
+            <p>
+                From indoor plants to outdoor gardens, we provide
+                quality plants, gardening products and professional
+                plant-care services.
+            </p>
+
+            <div class="about-list">
+
+                <p>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Healthy and quality plants
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Expert plant-care guidance
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Safe and fast delivery
+                </p>
+
+            </div>
+
+            <a href="#contact" class="btn">
+                Contact Us
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATISTICS ================= -->
+
+    <section class="stats-section">
+
+        <div class="stat">
+
+            <i class="fa-solid fa-calendar"></i>
+
+            <h2>5+</h2>
+
+            <p>Years Experience</p>
+
+        </div>
+
+        <div class="stat">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h2>5000+</h2>
+
+            <p>Happy Customers</p>
+
+        </div>
+
+        <div class="stat">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <h2>100+</h2>
+
+            <p>Plant Varieties</p>
+
+        </div>
+
+        <div class="stat">
+
+            <i class="fa-solid fa-seedling"></i>
+
+            <h2>10000+</h2>
+
+            <p>Plants Sold</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="section-heading">
+
+            <p class="section-subtitle">
+                Get In Touch
+            </p>
+
+            <h2>Contact GreenLeaf</h2>
+
+            <p>
+                Have a question? We would love to hear from you.
+            </p>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Let's Talk About Plants 🌱</h3>
+
+                <p>
+                    Contact us for plant recommendations,
+                    gardening services or any other questions.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <h4>Our Location</h4>
+                        <p>Hyderabad, Telangana</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 98765 43210</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+                        <h4>Email</h4>
+                        <p>hello@greenleaf.com</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-group">
+
+                    <label for="name">Your Name</label>
+
+                    <input type="text"
+                           id="name"
+                           placeholder="Enter your name">
+
+                    <small class="error" id="nameError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">Email Address</label>
+
+                    <input type="email"
+                           id="email"
+                           placeholder="Enter your email">
+
+                    <small class="error" id="emailError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">Phone Number</label>
+
+                    <input type="text"
+                           id="phone"
+                           placeholder="Enter your phone number">
+
+                    <small class="error" id="phoneError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">Message</label>
+
+                    <textarea id="message"
+                              rows="5"
+                              placeholder="Write your message"></textarea>
+
+                    <small class="error" id="messageError"></small>
+
+                </div>
+
+
+                <button type="submit" class="btn">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-about">
+
+                <a href="#home" class="logo">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>Green<span>Leaf</span></span>
+                </a>
+
+                <p>
+                    Bringing nature closer to your home,
+                    one plant at a time.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#services">Services</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#about">About Us</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Categories</h3>
+
+                <a href="#products">Indoor Plants</a>
+                <a href="#products">Outdoor Plants</a>
+                <a href="#products">Flowering Plants</a>
+                <a href="#products">Succulents</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 GreenLeaf Plant Nursery. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= CART SIDEBAR ================= -->
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <h2>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Your Cart
+            </h2>
+
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <div class="empty-cart">
+
+                <i class="fa-solid fa-basket-shopping"></i>
+
+                <h3>Your cart is empty</h3>
+
+                <p>Add some beautiful plants!</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= SUCCESS MESSAGE ================= -->
+
+    <div class="toast" id="toast">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <span id="toastMessage">
+            Added to cart!
+        </span>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
